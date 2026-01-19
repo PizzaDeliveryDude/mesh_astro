@@ -1,0 +1,5 @@
+# Ignore log files
+*.json
+
+# Ignore temp folders
+log/ 
