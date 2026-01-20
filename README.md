@@ -8,15 +8,17 @@ It is a crude way to send Navy astronomical sun and moon data via Meshtastic.
 
 ### meshtasticd
 
+[meshtasticd](https://meshtastic.org/docs/software/linux/installation/)
+
 ### make sure the bash script is executable:
 
-sudo chmod +x mesh_astro/mesh_astro.sh
+`sudo chmod +x mesh_astro/mesh_astro.sh`
 
-### cron - your lat and lon should match "where are you transmitting from?"
+### cron - your lat and lon should match "where_are_you_transmitting_from?"
 
-crontab -e
+`crontab -e`
 
 #### syntax
-mesh_wx.sh [lat] [lon] [timezone offset] [mshtastic channel number] [where are you transmitting from?]
+mesh_wx.sh lat lon timezone_offset meshtastic_channel_number where_are_you_transmitting_from?
 
-@daily bash /path/to/mesh_astro/mesh_astro.sh 40.78 -73.96 -5 0 "Central Park"
+`@daily bash /path/to/mesh_astro/mesh_astro.sh 40.78 -73.96 -5 0 "Central Park"`
