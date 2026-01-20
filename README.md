@@ -19,6 +19,6 @@ It is a crude way to send Navy astronomical sun and moon data via Meshtastic.
 `crontab -e`
 
 #### syntax
-mesh_wx.sh lat lon timezone_offset meshtastic_channel_number where_are_you_transmitting_from?
+mesh_astro.sh lat lon timezone_offset meshtastic_channel_number where_are_you_transmitting_from?
 
 `@daily bash /path/to/mesh_astro/mesh_astro.sh 40.78 -73.96 -5 0 "Central Park"`
